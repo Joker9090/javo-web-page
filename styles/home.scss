@@ -36,7 +36,7 @@ body {
   h1 {
     @media screen and (max-width:768px) {
       font-size: 65px !important;
-      margin-left: -5px;
+      margin-left: 5px;
     }
 
     span {
@@ -48,11 +48,12 @@ body {
 
     p {
       @media screen and (max-width:768px) {
-        font-size: 30px !important;
+        font-size: 21px !important;
         margin-bottom: -8px !important;
-        line-height: 30PX !important;
-        margin-left: -0px;
+        line-height: 27PX !important;
+        margin-left: -20px;
         align-items: center;
+        letter-spacing: 0.01px;
       }
 
       color: black;
@@ -140,12 +141,11 @@ body {
 
   .SectionImage {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: width 2s, height 4s;
-    min-height: 400px;
   }
 
   .mobileImage {
@@ -210,10 +210,12 @@ body {
         line-height: 65px;
 
         @media screen and (max-width:768px) {
-          font-size: 28px;
+          font-size: 25px;
           margin-bottom: 18px;
-          line-height: 30px;
+          line-height: 20px;
           padding-left: 13px;
+          letter-spacing: -0.3px;
+          word-spacing: -3px;
         }
       }
 
@@ -246,7 +248,9 @@ body {
   width: 100%;
 
   // padding-left: -30px;
-
+  @media screen and (max-width:768px) {
+    height: 290px;
+  }
 
 
   .title {
@@ -260,9 +264,10 @@ body {
     // letter-spacing: -3px;
 
     @media screen and (max-width:768px) {
-      font-size: 50px !important;
-      line-height: 45px !important;
-      margin-left: -10px;
+      margin-top: 15px;
+      font-size: 43px !important;
+      line-height: 35px !important;
+      margin-left: -3px;
     }
   }
 
@@ -271,13 +276,13 @@ body {
     font-size: 45px !important;
     width: 100% !important;
     font-family: helvetica !important;
-    line-height: 38px;
+    line-height: 43px;
     word-spacing: -3px;
     letter-spacing: 1.2px;
 
     @media screen and (max-width:768px) {
-      font-size: 30px !important;
-      line-height: 30px !important;
+      font-size: 23px !important;
+      line-height: 25px !important;
     }
 
     @media screen and (max-width:400px) {
@@ -331,12 +336,12 @@ body {
       max-width: 100%;
       margin-left: 5px; //texto filtro alineado con titulo
       margin-bottom: 30px;
-      margin-top: 14px;
+      margin-top: -20px;
       color: #7E7E7E;
       font-family: Helvetica;
 
-      @media screen and (max-width:768px) {
-        margin-left: 0px;
+      @media screen and (max-width:1200px) {
+        margin-left: 5px;
         margin-bottom: 25px;
         margin-top: 0px;
       }
@@ -362,7 +367,7 @@ body {
   .items,
   .mobileItems {
     // background-color: red;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 
     @media screen and (max-width: 1200px) {
       flex-direction: column;
@@ -370,6 +375,7 @@ body {
     }
 
     display: flex;
+
 
     .item {
       text-align: left;
@@ -381,6 +387,7 @@ body {
       // background-color: red;
       height: fit-content;
       width: fit-content;
+
 
 
       @media (min-width:768px) {
@@ -463,6 +470,16 @@ body {
       cursor: pointer;
     }
   }
+
+  @media screen and (max-height: 768px) {
+    width: 70px;
+    height: 50px;
+
+    &:hover {
+      background-color: #ebf5f5;
+    }
+  }
+
 }
 
 .Modal-Wrapper {
@@ -675,6 +692,7 @@ body {
 
   @media screen and (max-width:768px) {
     padding: 16px;
+
   }
 
   .titleWrapper {
@@ -684,6 +702,8 @@ body {
     @media screen and (max-width:768px) {
       // background-color: red;
       justify-content: flex-start;
+      margin-top: -20px;
+      margin-right: 100px;
     }
 
     // background-color: red;
@@ -703,7 +723,7 @@ body {
     margin-bottom: 0px;
 
     @media screen and (max-width:768px) {
-      font-size: 65px;
+      font-size: 75px;
       line-height: 45px;
 
       // margin-left: 15px;
@@ -728,9 +748,9 @@ body {
     @media screen and (max-width:768px) {
       font-size: 29px;
       line-height: 28px;
-      max-width: 550px;
       margin-top: 2px;
       margin-bottom: 2px;
+      word-spacing: -3px;
 
     }
   }
@@ -769,6 +789,8 @@ body {
         // margin-bottom: -100px;
       }
 
+
+
       .textTitle {
         font-size: 30px;
         font-family: helvetica;
@@ -776,15 +798,17 @@ body {
         font-weight: bold;
 
         @media screen and (max-width:1200px) {
-          font-size: 25px;
+          font-size: 26px;
         }
 
         @media screen and (max-width:768px) {
-          font-size: 30px;
-          line-height: 30px;
+          font-size: 32px;
+          line-height: 28px;
+          letter-spacing: -1px;
 
-          margin-bottom: 10px;
+          margin-bottom: 5px;
         }
+
       }
 
       .text {
@@ -802,9 +826,18 @@ body {
           line-height: 15px;
         }
 
+
+        @media screen and (max-width:1500px) {
+          font-size: 17px;
+        }
+
+        @media screen and (max-width:1500px) {
+          font-size: 17px;
+        }
+
         @media screen and (max-width:768px) {
           font-size: 20px;
-          line-height: 20px;
+          line-height: 8px;
           margin-bottom: 20px;
 
           height: fit-content;
@@ -813,8 +846,10 @@ body {
 
         @media screen and (max-width:500px) {
           font-size: 17px;
-          line-height: 20px;
+          line-height: 17px;
+          margin-bottom: 13px;
         }
+
       }
     }
   }
@@ -831,8 +866,7 @@ body {
     padding-top: 10px;
 
     @media screen and (max-width:1000px) {
-      flex-direction: column;
-      // padding-left: 25px;
+      display: flex;
     }
 
     .biographie {
@@ -849,16 +883,20 @@ body {
       }
 
       @media screen and (max-width:1000px) {
+        min-width: 0px;
+        margin-top: -20px;
+
+
+
         &.mobile {
           display: flex;
+
         }
 
         &.desktop {
           display: none;
         }
 
-        width: 100%;
-        height: 400px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -879,8 +917,8 @@ body {
         @media screen and (max-width:1000px) {
           background-position: top;
           background-size: cover;
-          width: 220px;
-          height: 140px;
+          width: 160px;
+          height: 100px;
         }
 
         &.active {
@@ -899,6 +937,8 @@ body {
         word-spacing: -1px;
 
         @media screen and (max-width:768px) {
+          font-size: 18px;
+
           // margin-bottom: -500px;
         }
 
@@ -940,6 +980,11 @@ body {
         height: fit-content;
       }
 
+      @media screen and (min-width:1500px) {
+        margin-right: 90px;
+
+      }
+
       .name {
         line-height: 25px;
         font-size: 30px;
@@ -975,7 +1020,7 @@ body {
 
       @media screen and (max-width:1000px) {
         &.mobile {
-          display: flex;
+          display: none;
         }
 
         &.desktop {
@@ -1076,10 +1121,18 @@ body {
 
     .contact {
       font-size: 20px;
-      height: 30px;
+      height: 40px;
       font-weight: bold;
-      margin-left: -5px;
+      margin-left: -25px;
       word-spacing: -3px;
+
+
+      @media screen and (max-width:1500px) {
+        font-size: 17px;
+        margin-left: -25px;
+        margin-top: 2px;
+      }
+
     }
 
     .city {
@@ -1090,13 +1143,25 @@ body {
       justify-content: end;
       text-align: left;
       flex-direction: column;
-      height: 30px;
+      height: 40px;
       margin-bottom: 0px;
+
+      @media screen and (max-width:1500px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width:768px) {
+        font-size: 18px;
+        word-spacing: 0.01px;
+      }
+
+
     }
 
     .left {
       display: flex;
-      align-items: end;
+      text-align: end;
+
 
       .brand {
         width: 25%;
@@ -1105,10 +1170,16 @@ body {
         color: $orange;
         letter-spacing: -2px;
         line-height: 50px;
-        margin-bottom: 25px;
+        margin-bottom: 38px;
+        cursor: pointer;
 
 
+        @media screen and (max-width:768px) {
+          font-size: 50px;
+          margin-top: -60px;
+        }
       }
+
 
       .phrase {
         margin: 0px;
@@ -1131,6 +1202,8 @@ body {
           margin-left: 0px;
           font-weight: normal;
         }
+
+
       }
     }
 
@@ -1145,6 +1218,7 @@ body {
       // background-color: red;
       // margin-right: 100px;
       margin-bottom: 25px;
+
     }
 
     @media screen and (max-width:1024px) {
@@ -1173,15 +1247,18 @@ body {
       }
 
       .contact {
-        font-size: 20px;
-        line-height: 14px;
+        font-size: 15px;
+        line-height: 23px;
         height: fit-content;
-        margin-top: 10px;
+        margin-top: -10px;
+        margin-left: 2px;
 
       }
 
       .city {
-        margin-top: 10px;
+        margin-top: 0px;
+        margin-left: 2px;
+
       }
     }
   }

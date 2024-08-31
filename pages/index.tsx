@@ -996,7 +996,7 @@ export const Footer = () => {
         </div>
 
       </div>
-
+{/*
       <div className="biographies">
         {biographies.map((b, i) => {
           return (
@@ -1026,15 +1026,13 @@ export const Footer = () => {
           )
         })}
         <div id='biographieText' className={activeBio !== "" ? "biographieText desktop d-md-flex" : "desktop d-none"}>
-          {/* <p className='name'>
-            {bioName}:
-          </p> */}
+
           <p className='text'>
             {bioText}
           </p>
         </div>
       </div>
-
+*/}
 
       <div className="finalContent d-flex">
         <div className="left">
